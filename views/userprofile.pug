@@ -1,0 +1,6 @@
+include nav
+body
+  h1= user['username']
+  if userInfo['loggedIn']
+    if userInfo['user']['_id'] == user['_id']
+      h2= "Logged in as this user"

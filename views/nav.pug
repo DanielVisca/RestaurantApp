@@ -1,0 +1,27 @@
+body
+    if userInfo['loggedIn']
+      strong= userInfo['user']['username']
+      tb
+      nav
+        a(href='/') Home |
+        a(href='/register') Register |
+        a(href='/users') Users |
+        a(href='/users/' + userInfo['user']['_id']) My Profile |
+        a(href='/logout') Logout
+    else 
+      
+      nav 
+        a(href='/') Home  |
+        a(href='/register') Register  |
+        a(href='/users') Users
+        br
+        strong Log In:
+        form(method="POST", action='/login')
+          div.form-group 
+            |Username:  
+            input#name.form-control(type="text", name="username")
+            | 
+            |Password:  
+            input#name.form-control(type="text", name="password")
+            | 
+          button.btn.btn-primary(type='submit') Submit

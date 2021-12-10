@@ -1,0 +1,22 @@
+{
+  "name": "danielsversion",
+  "version": "1.0.0",
+  "description": "Because Im bad at understanding code and to tired to do it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^4.6.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "express-sessions": "^1.0.6",
+    "JSON": "^1.0.0",
+    "mongodb": "^4.2.1",
+    "mongoose": "^6.1.0",
+    "node": "^17.2.0",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,14 @@
+include nav 
+
+body
+  h2= "Register"
+  form(method="POST", action='/register')
+    div.form-group
+      strong Username |
+      input#name.form-control(type="text", name="username")
+      br
+      strong Password |
+      input#name.form-control(type="text", name="password")
+      br
+    button.btn.btn-primary(type='submit') Submit
+

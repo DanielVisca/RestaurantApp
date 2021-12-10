@@ -1,0 +1,9 @@
+include nav 
+body
+  ul
+    each user in users 
+      
+      li
+        name= user["username"]
+        br
+        a(href='/users/'+user["_id"]) Link to User Profile
