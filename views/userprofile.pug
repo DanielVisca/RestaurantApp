@@ -4,3 +4,6 @@ body
   if userInfo['loggedIn']
     if userInfo['user']['_id'] == user['_id']
       h2= "Logged in as this user"
+      br
+      strong privacy
+        input(type="checkbox", action='set_privacy')
